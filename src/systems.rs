@@ -254,6 +254,8 @@ pub fn process_input_system(
                     pressed,
                     repeat: false,
                     modifiers,
+                    // TODO: Use this when release: https://github.com/bevyengine/bevy/pull/11400
+                    physical_key: None,
                 };
                 focused_input.events.push(egui_event);
 
